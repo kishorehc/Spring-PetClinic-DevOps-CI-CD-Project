@@ -1,4 +1,4 @@
-# 🐾 Spring PetClinic – DevOps CI/CD Project
+#  Spring PetClinic – DevOps CI/CD Pipeline with Maven & SonarQube
 
 > **Author:** Kishore · **Date:** May 2026 · **Version:** 4.0.0-SNAPSHOT
 
@@ -59,7 +59,11 @@ GitHub Repository
 | `nexus`         | —                | Artifact Repository (Nexus)    | 8081 | c7i.flex.large   |
 | `sonarqube`     | 3.7.55.140       | Code Quality Analysis          | 9000 | c7i.flex.large   |
 | `maven&tomcat`  | 43.204.114.151   | Build & Deploy                 | 8080 | c7i.flex.large   |
+-----
 
+<img width="3839" height="2159" alt="Screenshot 2026-05-14 113103" src="https://github.com/user-attachments/assets/9bb34823-0a60-4de3-a7f9-1d4596efc185" />
+
+-----
 **OS:** Ubuntu 26.04 LTS (GNU/Linux 7.0.0-1004-aws x86_64)
 
 ---
@@ -77,8 +81,19 @@ GitHub Repository
 | SonarQube         | 26.5.0 (Community)   | Code Quality         |
 | AWS EC2           | c7i.flex.large       | Cloud Infrastructure |
 
----
+----
 
+## CONFIGURATION OF INSTANCE:
+
+----
+<img width="3839" height="2032" alt="Screenshot 2026-05-14 113130" src="https://github.com/user-attachments/assets/062e7116-9fa9-4450-afe8-5ec9e61fafe3" />
+
+----
+
+<img width="3839" height="2026" alt="Screenshot 2026-05-14 113143" src="https://github.com/user-attachments/assets/b85a0651-9552-48a5-856b-fb643523fd57" />
+
+----
+-----
 ## 🚀 Setup & Deployment
 
 ### Step 1 – Update the System
@@ -166,6 +181,7 @@ After a successful build, the JAR is created at:
 ```
 target/spring-petclinic-4.0.0-SNAPSHOT.jar
 ```
+<img width="3839" height="2023" alt="Screenshot 2026-05-14 113223" src="https://github.com/user-attachments/assets/22921091-8afb-4248-8d30-24f796ae81d8" />
 
 Confirm the output:
 
@@ -201,6 +217,7 @@ mvn sonar:sonar \
 ```
 
 #### 6c – View the analysis report
+<img width="3839" height="2036" alt="Screenshot 2026-05-14 113200" src="https://github.com/user-attachments/assets/b4a9fd7b-d532-4025-b371-cdc1a9adb0e0" />
 
 ```bash
 cat target/sonar/report-task.txt
@@ -215,6 +232,7 @@ dashboardUrl=http://3.7.55.140:9000/dashboard?id=spring_petclinic
 ```
 
 #### SonarQube Dashboard Results
+<img width="3839" height="2037" alt="Screenshot 2026-05-14 113235" src="https://github.com/user-attachments/assets/bf38ad06-06cf-4d9c-9ffe-7fdc1735ae2c" />
 
 | Metric           | Result               |
 |------------------|----------------------|
@@ -282,6 +300,7 @@ Navigate to the target directory:
 ```bash
 cd ~/spring-petclinic/target/
 ```
+<img width="3838" height="2028" alt="Screenshot 2026-05-14 113247" src="https://github.com/user-attachments/assets/193663cf-7736-49ff-b64e-98b096126a0e" />
 
 #### Option A – Foreground (testing/debugging)
 
@@ -396,7 +415,7 @@ spring-petclinic-4.0.0-SNAPSHOT.jar
 
 ## 👤 Author
 
-**Kishore** — DevOps Engineer  
+**Kishore** — AWS DevOps Engineer  
 AWS · Maven · SonarQube · Tomcat · Spring Boot
 
 ---
